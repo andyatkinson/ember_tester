@@ -1,11 +1,19 @@
-<h1>Posts</h1>
-
-<ul>
-  {{#each controller}}
-    <li>{{#linkTo "post" this}}{{title}}{{/linkTo}}</li>
-  {{else}}
-    <li>There are no posts.</li>
-  {{/each}}
-</ul>
-
-{{outlet}}
+<div class='container-fluid'>
+  <div class='row'>
+    
+    <div class="col-md-4">
+      <table class="table table-striped">
+        {{#each controller}}
+          <tr><td>{{#linkTo "post" this}}{{title}}{{/linkTo}}</td></tr>
+        {{else}}
+          <tr><td>There are no posts.</td></tr>
+        {{/each}}
+      </table>
+    </div>
+    
+    <div class="col-md-8 content-area">
+      {{outlet}}
+    </div>
+      
+  </div>
+</div>
