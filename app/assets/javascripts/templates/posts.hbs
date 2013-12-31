@@ -1,6 +1,8 @@
+<button {{action setSuccess}} class='alert-success'>Flash Success</button>
+<button {{action setAlert}} class='alert-warning'>Flash warning</button>
+
 <div class='container-fluid'>
   <div class='row'>
-    
     <div class="col-md-4">
       <table class="table table-striped">
         {{#each controller}}
@@ -9,7 +11,6 @@
           <tr><td>There are no posts.</td></tr>
         {{/each}}
       </table>
-      {{#linkTo "posts.create" class="create-btn"}}Create post{{/linkTo}}
     </div>
     
     <div class="col-md-8 content-area">

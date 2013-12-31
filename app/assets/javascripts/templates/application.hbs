@@ -1,10 +1,13 @@
 <div class="container">
+  {{view EmberTester.FlashView model=EmberTester.flash}}
+
   <header id="header">
     <h2>{{#linkTo "index"}}Home{{/linkTo}}</h2>
 
     <nav>
       <ul class="nav nav-tabs">
         <li>{{#linkTo "posts"}}Posts{{/linkTo}}</li>
+        <li>{{#linkTo "posts.create" class="create-btn"}}Create post{{/linkTo}}</li>
       </ul>
     </nav>
   </header>

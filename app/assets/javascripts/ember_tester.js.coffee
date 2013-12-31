@@ -8,3 +8,8 @@
 #= require_tree ./routes
 #= require ./router
 #= require_self
+
+EmberTester.set("flash", EmberTester.Flash.create())
+
+
+
