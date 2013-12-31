@@ -3,4 +3,5 @@
 EmberTester.Router.map ->
   this.resource "posts", ->
     this.resource "post", path: ":post_id"
+    this.route "create"
 
